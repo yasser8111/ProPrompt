@@ -110,15 +110,15 @@ const Home = () => {
 
       {/* How it works */}
       <section className="bg-gray-900 py-40 rounded-[80px] mx-4 sm:mx-10 px-6 overflow-hidden relative">
-        <div className="max-w-7xl mx-auto text-center relative z-10">
+        <div className="max-w-7xl mx-auto text-center md:text-start relative z-10">
           <h2 className="text-4xl font-black text-white mb-24 tracking-tighter uppercase">{t('howItWorks.title')}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-24">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-24 font-arabic-fix">
             {[
               { step: '01', title: t('howItWorks.step1.title'), text: t('howItWorks.step1.desc') },
               { step: '02', title: t('howItWorks.step2.title'), text: t('howItWorks.step2.desc') },
               { step: '03', title: t('howItWorks.step3.title'), text: t('howItWorks.step3.desc') },
             ].map((item, i) => (
-              <div key={item.step} className="group text-center">
+              <div key={item.step} className="group text-start">
                 <div className="text-7xl font-black text-blue-600 mb-10 transition-colors duration-500">
                   {item.step}
                 </div>
