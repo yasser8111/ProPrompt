@@ -74,12 +74,12 @@ const Home = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                className={`group p-10 rounded-[45px] border relative overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-gray-200/50 hover:bg-white hover:border-transparent cursor-pointer ${cat.color}`}
+                className={`p-10 rounded-[45px] border relative overflow-hidden transition-all duration-300 cursor-pointer ${cat.color}`}
               >
                 <div className="relative z-10 text-center md:text-start">
                   <cat.icon className="w-10 h-10 mb-8 mx-auto md:mx-0 opacity-80" />
                   <h3 className="text-xl font-black mb-3 text-gray-900 leading-tight">{cat.title}</h3>
-                  <p className="font-bold text-gray-400 group-hover:text-blue-600 transition-colors uppercase tracking-widest text-[10px]">{cat.count} {t('categories.promptsCount')}</p>
+                  <p className="font-bold text-gray-400 uppercase tracking-widest text-[10px]">{cat.count} {t('categories.promptsCount')}</p>
                 </div>
               </motion.div>
             ))}
