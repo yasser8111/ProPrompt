@@ -72,7 +72,7 @@ const PromptDetail = () => {
                 <p className="text-sm font-bold text-gray-400 mt-1 uppercase tracking-widest text-[10px]">{t('details.refineDesc')}</p>
               </div>
               
-              <div className="flex items-center space-x-3 space-x-reverse ">
+              <div className="flex items-center space-x-3 space-x-reverse gap-6">
                 <button 
                   onClick={() => setIsEditing(!isEditing)}
                   aria-label={isEditing ? t('details.finish') : t('details.edit')}

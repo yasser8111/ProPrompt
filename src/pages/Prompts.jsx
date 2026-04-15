@@ -84,7 +84,13 @@ const Prompts = () => {
               onClick={() => setSelectedCategory(cat)}
               className={`px-6 py-2.5 text-[10px] font-black rounded-full transition-all border uppercase tracking-widest ${
                 selectedCategory === cat 
-                ? 'bg-blue-600 text-white border-blue-600 shadow-xl shadow-blue-500/20' 
+                ? (
+                    cat === 'Image' ? 'bg-indigo-soft text-indigo-primary border-indigo-primary/20 shadow-xl shadow-indigo-primary/10' :
+                    cat === 'Coding' ? 'bg-emerald-soft text-emerald-primary border-emerald-primary/20 shadow-xl shadow-emerald-primary/10' :
+                    cat === 'Text' ? 'bg-amber-soft text-amber-primary border-amber-primary/20 shadow-xl shadow-amber-primary/10' :
+                    cat === 'Productivity' ? 'bg-rose-soft text-rose-primary border-rose-primary/20 shadow-xl shadow-rose-primary/10' :
+                    'bg-blue-600 text-white border-blue-600 shadow-xl shadow-blue-500/20'
+                  )
                 : 'bg-white text-gray-400 border-gray-100 hover:border-blue-200 hover:text-blue-600'
               }`}
             >
