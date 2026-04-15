@@ -67,6 +67,11 @@ const PromptDetail = () => {
             <div className="absolute top-0 right-0 w-80 h-80 bg-blue-50/30 rounded-full blur-[100px] -z-1"></div>
             
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-10 mb-12 relative z-10">
+              <div className="flex flex-col">
+                <h3 className="text-xl font-black text-gray-900 uppercase tracking-tight">{t('details.powerPrompt')}</h3>
+                <p className="text-sm font-bold text-gray-400 mt-1 uppercase tracking-widest text-[10px]">{t('details.refineDesc')}</p>
+              </div>
+              
               <div className="flex items-center space-x-3 space-x-reverse">
                 <button 
                   onClick={() => setIsEditing(!isEditing)}
