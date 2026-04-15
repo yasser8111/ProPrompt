@@ -60,16 +60,14 @@ const Prompts = () => {
           <div className="flex items-center space-x-2 space-x-reverse shrink-0 bg-gray-50/80 p-2.5 rounded-[22px] border border-gray-100/50">
             <button 
               onClick={() => setSortBy('Trending')}
-              className={`flex items-center space-x-2 space-x-reverse px-6 py-3 rounded-2xl transition-all ${sortBy === 'Trending' ? 'bg-white text-blue-600 shadow-sm font-black text-[10px] uppercase tracking-widest' : 'text-gray-400 font-bold text-[10px] uppercase tracking-widest hover:text-gray-600'}`}
+              className={`px-6 py-3 rounded-2xl transition-all ${sortBy === 'Trending' ? 'bg-white text-blue-600 shadow-sm font-black text-[10px] uppercase tracking-widest' : 'text-gray-400 font-bold text-[10px] uppercase tracking-widest hover:text-gray-600'}`}
             >
-              <TrendingUp className="w-3.5 h-3.5" />
               <span>{t('prompts.trending')}</span>
             </button>
             <button 
               onClick={() => setSortBy('New')}
-              className={`flex items-center space-x-2 space-x-reverse px-6 py-3 rounded-2xl transition-all ${sortBy === 'New' ? 'bg-white text-blue-600 shadow-sm font-black text-[10px] uppercase tracking-widest' : 'text-gray-400 font-bold text-[10px] uppercase tracking-widest hover:text-gray-600'}`}
+              className={`px-6 py-3 rounded-2xl transition-all ${sortBy === 'New' ? 'bg-white text-blue-600 shadow-sm font-black text-[10px] uppercase tracking-widest' : 'text-gray-400 font-bold text-[10px] uppercase tracking-widest hover:text-gray-600'}`}
             >
-              <Clock className="w-3.5 h-3.5" />
               <span>{t('prompts.newest')}</span>
             </button>
           </div>
