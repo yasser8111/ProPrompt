@@ -9,21 +9,6 @@ const Footer = () => {
     <footer className="bg-white border-t border-gray-100 py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-20">
-          {/* Logo and Tagline */}
-          <div className="col-span-1 md:col-span-1">
-            <div className="flex items-center space-x-2 space-x-reverse mb-8 gap-2">
-              <div className="p-1.5 bgColorGradient rounded-lg">
-                <Sparkles className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-bold text-gray-900 tracking-tight">
-                Pro<span className="text-blue-600">Prompt</span>
-              </span>
-            </div>
-            <p className="text-gray-500 text-sm leading-relaxed max-w-xs font-medium">
-              {t("footer.desc")}
-            </p>
-          </div>
-
           {/* Quick Links */}
           <div>
             <h3 className="text-[10px] font-black text-gray-900 uppercase tracking-[4px] mb-10 border-b border-blue-600/10 w-fit pb-4">
@@ -132,6 +117,21 @@ const Footer = () => {
                 </svg>
               </a>
             </div>
+          </div>
+
+          {/* Logo and Tagline */}
+          <div className="col-span-1 md:col-span-1">
+            <div className="flex items-center space-x-2 space-x-reverse mb-8 gap-2">
+              <div className="p-1.5 bgColorGradient rounded-lg">
+                <Sparkles className="w-5 h-5 text-white" />
+              </div>
+              <span className="text-xl font-bold text-gray-900 tracking-tight">
+                Pro<span className="text-blue-600">Prompt</span>
+              </span>
+            </div>
+            <p className="text-gray-500 text-sm leading-relaxed max-w-xs font-medium text-start">
+              {t("footer.desc")}
+            </p>
           </div>
         </div>
 

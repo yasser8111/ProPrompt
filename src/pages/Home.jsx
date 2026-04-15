@@ -60,7 +60,7 @@ const Home = () => {
 
       {/* Categories Section */}
       <section className="bg-white py-32 px-4 sm:px-6 lg:px-8 border-y border-gray-50/50">
-        <div className="max-w-7xl mx-auto text-center md:text-left">
+        <div className="max-w-7xl mx-auto text-center md:text-start">
           <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
             <div className="max-w-xl">
               <h2 className="text-3xl font-black text-gray-900 mb-4 tracking-tighter uppercase">{t('categories.title')}</h2>
@@ -76,7 +76,7 @@ const Home = () => {
                 viewport={{ once: true }}
                 className={`group p-10 rounded-[45px] border relative overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-gray-200/50 hover:bg-white hover:border-transparent cursor-pointer ${cat.color}`}
               >
-                <div className="relative z-10 text-center md:text-left">
+                <div className="relative z-10 text-center md:text-start">
                   <cat.icon className="w-10 h-10 mb-8 mx-auto md:mx-0 opacity-80" />
                   <h3 className="text-xl font-black mb-3 text-gray-900 leading-tight">{cat.title}</h3>
                   <p className="font-bold text-gray-400 group-hover:text-blue-600 transition-colors uppercase tracking-widest text-[10px]">{cat.count} {t('categories.promptsCount')}</p>
@@ -90,7 +90,7 @@ const Home = () => {
       {/* Featured Section */}
       <section className="py-40 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center mb-20 space-y-4 md:space-y-0 text-center md:text-left">
+          <div className="flex flex-col md:flex-row justify-between items-center mb-20 space-y-4 md:space-y-0 text-center md:text-start">
             <div>
               <h2 className="text-4xl font-black text-gray-900 mb-3 tracking-tighter uppercase">{t('trending.title')}</h2>
               <p className="text-gray-500 text-lg font-medium">{t('trending.subtitle')}</p>
