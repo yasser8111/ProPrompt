@@ -26,7 +26,7 @@ const PromptCard = ({ prompt }) => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="group bg-white rounded-[40px] border border-gray-100  hover:border-blue-100 transition-all duration-500 overflow-hidden flex flex-col h-full"
+      className="group bg-white rounded-[45px] border border-gray-100/50 shadow-2xl shadow-blue-500/5 hover:border-blue-100 transition-all duration-500 overflow-hidden flex flex-col h-full"
     >
       <Link to={`/prompts/${prompt.id}`} className="block relative aspect-video overflow-hidden bg-gray-50/50 border-b border-gray-50">
         {prompt.previewImages && prompt.previewImages[0] ? (
