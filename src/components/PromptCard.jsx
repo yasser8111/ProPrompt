@@ -26,7 +26,7 @@ const PromptCard = ({ prompt }) => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="group bg-white rounded-[40px] border border-gray-100 shadow-sm hover:shadow-2xl hover:shadow-gray-200/50 hover:border-blue-100 transition-all duration-500 overflow-hidden flex flex-col h-full"
+      className="group bg-white rounded-[40px] border border-gray-100  hover:border-blue-100 transition-all duration-500 overflow-hidden flex flex-col h-full"
     >
       <Link to={`/prompts/${prompt.id}`} className="block relative aspect-video overflow-hidden bg-gray-50/50 border-b border-gray-50">
         {prompt.previewImages && prompt.previewImages[0] ? (
@@ -63,7 +63,7 @@ const PromptCard = ({ prompt }) => {
         <div className="mt-auto flex items-center justify-between pt-6 border-t border-gray-50/50">
           <button 
             onClick={handleCopy}
-            className="px-6 py-2.5 bg-gray-50/50 text-gray-400 hover:text-blue-600 font-black uppercase tracking-widest text-[10px] transition-all rounded-xl hover:bg-blue-50 border border-gray-100/50"
+            className="px-6 py-2.5 bg-gray-50/50 text-gray-400 hover:text-blue-600 font-black uppercase tracking-widest text-[10px] transition-all rounded-xl hover:bg-blue-50"
           >
             <span>{t('prompts.copyPrompt')}</span>
           </button>
