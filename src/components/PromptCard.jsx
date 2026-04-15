@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Copy, ArrowRight, Image as ImageIcon, Code, FileText, Zap } from 'lucide-react';
+import { ArrowRight, Image as ImageIcon, Code, FileText, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -48,7 +48,7 @@ const PromptCard = ({ prompt }) => {
         </div>
       </Link>
 
-      <div className="p-8 flex-grow flex flex-col">
+      <div className="p-8 grow flex flex-col">
         <h3 className="text-xl font-black text-gray-900 group-hover:text-blue-600 transition-colors mb-4 line-clamp-1 tracking-tight leading-tight">{prompt.title}</h3>
         <p className="text-gray-500 text-sm mb-6 line-clamp-2 leading-relaxed font-medium">
           {prompt.prompt}
@@ -63,9 +63,8 @@ const PromptCard = ({ prompt }) => {
         <div className="mt-auto flex items-center justify-between pt-6 border-t border-gray-50/50">
           <button 
             onClick={handleCopy}
-            className="flex items-center space-x-2 space-x-reverse text-gray-400 hover:text-blue-600 font-black uppercase tracking-widest text-[10px] transition-colors p-2 -ml-2 rounded-xl hover:bg-blue-50"
+            className="px-6 py-2.5 bg-gray-50/50 text-gray-400 hover:text-blue-600 font-black uppercase tracking-widest text-[10px] transition-all rounded-xl hover:bg-blue-50 border border-gray-100/50"
           >
-            <Copy className="w-4 h-4" />
             <span>{t('prompts.copyPrompt')}</span>
           </button>
           

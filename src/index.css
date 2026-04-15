@@ -1,29 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Outfit:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Outfit:wght@200;300;400;500;600;700;800;900;1000&display=swap");
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Outfit', system-ui, -apple-system, sans-serif;
-  --font-arabic: 'Cairo', system-ui, sans-serif;
+  --font-sans: "Outfit", system-ui, -apple-system, sans-serif;
+  --font-arabic: "Cairo", system-ui, sans-serif;
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
   }
-  
-  html[lang="ar"], 
-  html[lang="ar"] body, 
-  html[lang="ar"] h1, 
-  html[lang="ar"] h2, 
-  html[lang="ar"] h3, 
-  html[lang="ar"] h4, 
-  html[lang="ar"] h5, 
-  html[lang="ar"] h6,
-  html[lang="ar"] button,
-  html[lang="ar"] input,
-  html[lang="ar"] textarea,
-  html[lang="ar"] select {
-    font-family: 'Cairo', sans-serif !important;
+
+  html[lang="ar"] * {
+    font-family: "Cairo", sans-serif !important;
   }
 
   body {
@@ -32,7 +21,9 @@
     @apply transition-all duration-300;
   }
 
-  button, a, [role="button"] {
+  button,
+  a,
+  [role="button"] {
     @apply cursor-pointer;
   }
 
@@ -59,26 +50,30 @@
   .bgColorGradient {
     background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
   }
-  
+
   .animate-spin-slow {
     animation: spin-slow 8s linear infinite;
   }
 
   @keyframes spin-slow {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 
   /* Subtle transitions */
   .premium-transition {
-     @apply transition-all duration-300 ease-out;
+    @apply transition-all duration-300 ease-out;
   }
 
   .font-arabic {
-    font-family: 'Cairo', sans-serif !important;
+    font-family: "Cairo", sans-serif !important;
   }
 
   .font-sans {
-    font-family: 'Outfit', sans-serif !important;
+    font-family: "Outfit", sans-serif !important;
   }
 }
