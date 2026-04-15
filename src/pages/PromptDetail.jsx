@@ -43,7 +43,12 @@ const PromptDetail = () => {
       <div className="max-w-4xl mx-auto">
         <div className="mb-20">
           <div className="flex flex-wrap items-center gap-4 mb-8">
-            <span className="px-5 py-2 bg-blue-50 text-blue-600 text-[10px] font-black rounded-full border border-blue-100/50 uppercase tracking-widest">
+            <span className={`px-5 py-2 text-[10px] font-black rounded-full border uppercase tracking-widest ${
+              prompt.category === 'Image' ? 'bg-indigo-soft text-indigo-primary border-indigo-primary/20' :
+              prompt.category === 'Coding' ? 'bg-emerald-soft text-emerald-primary border-emerald-primary/20' :
+              prompt.category === 'Text' ? 'bg-amber-soft text-amber-primary border-amber-primary/20' :
+              'bg-rose-soft text-rose-primary border-rose-primary/20'
+            }`}>
               {prompt.category}
             </span>
             <div className="flex gap-2">
