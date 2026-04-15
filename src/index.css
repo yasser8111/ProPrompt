@@ -11,7 +11,18 @@
     scroll-behavior: smooth;
   }
   
-  html[lang="ar"] {
+  html[lang="ar"], 
+  html[lang="ar"] body, 
+  html[lang="ar"] h1, 
+  html[lang="ar"] h2, 
+  html[lang="ar"] h3, 
+  html[lang="ar"] h4, 
+  html[lang="ar"] h5, 
+  html[lang="ar"] h6,
+  html[lang="ar"] button,
+  html[lang="ar"] input,
+  html[lang="ar"] textarea,
+  html[lang="ar"] select {
     font-family: 'Cairo', sans-serif !important;
   }
 
@@ -65,5 +76,9 @@
 
   .font-arabic {
     font-family: 'Cairo', sans-serif !important;
+  }
+
+  .font-sans {
+    font-family: 'Outfit', sans-serif !important;
   }
 }
