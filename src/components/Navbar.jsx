@@ -16,7 +16,7 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-xl border-b border-gray-100">
+    <nav dir="ltr" className="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-xl border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center group gap-3">
@@ -25,12 +25,12 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Links */}
-          <div className="hidden md:flex items-center space-x-8 space-x-reverse">
+          <div className="hidden md:flex items-center">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-bold transition-all px-2 py-1 rounded-lg ${
+                className={`text-sm font-bold transition-all px-4 py-1 rounded-lg ${
                   isActive(link.path) ? 'text-blue-600 bg-blue-50/50' : 'text-gray-500 hover:text-blue-600 hover:bg-gray-50'
                 }`}
               >
@@ -53,7 +53,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center space-x-4 space-x-reverse">
+          <div className="md:hidden flex items-center space-x-4">
             <button onClick={toggleLanguage} className="text-xs font-black uppercase text-gray-400 px-3 py-2">
               {lang === 'en' ? 'AR' : 'EN'}
             </button>
