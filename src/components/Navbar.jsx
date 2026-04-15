@@ -40,14 +40,14 @@ const Navbar = () => {
               </Link>
             ))}
             
-            <div className="h-4 w-px bg-gray-200" />
-            
             <button 
               onClick={toggleLanguage}
               className="text-xs font-black uppercase tracking-wider text-gray-400 hover:text-blue-600 transition-colors px-2 py-1"
             >
               {lang === 'en' ? 'AR' : 'EN'}
             </button>
+
+            <div className="h-4 w-px mx-8 bg-gray-200" />
 
             <button className="px-6 py-2.5 bg-blue-600 text-white text-xs font-black uppercase tracking-widest rounded-xl hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/20 active:translate-y-0.5 transition-all">
               {t('nav.signIn')}

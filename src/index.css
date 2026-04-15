@@ -17,6 +17,10 @@
     @apply transition-all duration-300;
   }
 
+  button, a, [role="button"] {
+    @apply cursor-pointer;
+  }
+
   /* Custom Smooth Scrollbar */
   ::-webkit-scrollbar {
     width: 6px;
