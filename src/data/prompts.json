@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Anime Character Portrait",
+    "category": "Image",
+    "tags": ["anime", "digital art", "portrait"],
+    "prompt": "Highly detailed anime character portrait, cinematic lighting, purple and blue ambient lighting, intricate clothing patterns, 8k resolution, trending on ArtStation.",
+    "previewImages": ["https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1000&auto=format&fit=crop"],
+    "isFeatured": true,
+    "isTrending": true
+  },
+  {
+    "id": 2,
+    "title": "React Performance Hook",
+    "category": "Coding",
+    "tags": ["react", "javascript", "performance"],
+    "prompt": "Write a custom React hook called useExpensiveCalculation that memoizes a result based on search input and a large data set, including debounce logic for optimization.",
+    "previewImages": [],
+    "sampleOutput": "const useExpensiveCalculation = (data, query) => { ... }",
+    "isFeatured": true,
+    "isTrending": false
+  },
+  {
+    "id": 3,
+    "title": "Minimalist Interior Design",
+    "category": "Image",
+    "tags": ["interior", "minimalism", "realistic"],
+    "prompt": "Hyper-realistic living room in Scandinavian minimalist style, floor-to-ceiling windows, soft morning light, white oak furniture, minimalist decor, neutral tones, photorealistic.",
+    "previewImages": ["https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1000&auto=format&fit=crop"],
+    "isFeatured": false,
+    "isTrending": true
+  },
+  {
+    "id": 4,
+    "title": "Effective Email Outreach",
+    "category": "Text",
+    "tags": ["business", "marketing", "email"],
+    "prompt": "Draft a personalized cold email for a SaaS product outreach, focusing on a pain point for marketing managers, with a strong call-to-action and professional tone.",
+    "previewImages": [],
+    "sampleOutput": "Subject: Scaling Your Marketing Efforts with [Product Name]...",
+    "isFeatured": false,
+    "isTrending": false
+  },
+  {
+    "id": 5,
+    "title": "Python Data Visualization",
+    "category": "Coding",
+    "tags": ["python", "data science", "matplotlib"],
+    "prompt": "Generate a Python script using Matplotlib and Pandas to plot a multi-line graph showing profit trends for different departments over the last 12 months.",
+    "previewImages": [],
+    "sampleOutput": "import pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv('data.csv')...",
+    "isFeatured": false,
+    "isTrending": true
+  },
+  {
+    "id": 6,
+    "title": "Cyberpunk Streetscape",
+    "category": "Image",
+    "tags": ["cyberpunk", "neon", "future"],
+    "prompt": "Nighttime cyberpunk street in Neo-Tokyo, rainy pavement reflecting neon signs, flying cars in the distance, high contrast, vaporwave color palette, unreal engine 5 render.",
+    "previewImages": ["https://images.unsplash.com/photo-1614728263952-84ea206f99b6?q=80&w=1000&auto=format&fit=crop"],
+    "isFeatured": true,
+    "isTrending": true
+  }
+]
