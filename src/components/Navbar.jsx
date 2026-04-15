@@ -44,10 +44,9 @@ const Navbar = () => {
             
             <button 
               onClick={toggleLanguage}
-              className="group flex items-center space-x-2 space-x-reverse px-4 py-2 bg-gray-50 text-gray-700 text-xs font-black uppercase tracking-widest rounded-xl hover:bg-gray-100 transition-all border border-gray-200/50"
+              className="text-xs font-black uppercase tracking-wider text-gray-400 hover:text-blue-600 transition-colors px-2 py-1"
             >
-              <Globe className="w-3.5 h-3.5 text-blue-600 group-hover:rotate-12 transition-transform" />
-              <span>{lang === 'en' ? 'Arabic' : 'English'}</span>
+              {lang === 'en' ? 'AR' : 'EN'}
             </button>
 
             <button className="px-6 py-2.5 bg-blue-600 text-white text-xs font-black uppercase tracking-widest rounded-xl hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/20 active:translate-y-0.5 transition-all">
@@ -57,8 +56,8 @@ const Navbar = () => {
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center space-x-4 space-x-reverse">
-            <button onClick={toggleLanguage} className="p-2 text-gray-600 bg-gray-50 rounded-lg border border-gray-100">
-              <Globe className="w-5 h-5" />
+            <button onClick={toggleLanguage} className="text-xs font-black uppercase text-gray-400 px-3 py-2">
+              {lang === 'en' ? 'AR' : 'EN'}
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}

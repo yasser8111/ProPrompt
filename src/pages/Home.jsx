@@ -111,7 +111,7 @@ const Home = () => {
       {/* How it works */}
       <section className="bg-gray-900 py-40 rounded-[80px] mx-4 sm:mx-10 px-6 overflow-hidden relative">
         <div className="max-w-7xl mx-auto text-center relative z-10">
-          <h2 className="text-4xl font-black text-white mb-24 tracking-tighter uppercase tracking-widest">{t('howItWorks.title')}</h2>
+          <h2 className="text-4xl font-black text-white mb-24 tracking-tighter uppercase">{t('howItWorks.title')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-24">
             {[
               { step: '01', title: t('howItWorks.step1.title'), text: t('howItWorks.step1.desc') },
