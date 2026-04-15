@@ -1,5 +1,4 @@
 import React from "react";
-import { Sparkles } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 
 const Footer = () => {
@@ -121,10 +120,8 @@ const Footer = () => {
 
           {/* Logo and Tagline */}
           <div className="col-span-1 md:col-span-1">
-            <div className="flex items-center space-x-2 space-x-reverse mb-8 gap-2">
-              <div className="p-1.5 bgColorGradient rounded-lg">
-                <Sparkles className="w-5 h-5 text-white" />
-              </div>
+            <div className="flex items-center mb-8 gap-3">
+              <img src="/logo.png" alt="ProPrompt" className="w-8 h-8 rounded-lg" />
               <span className="text-xl font-bold text-gray-900 tracking-tight">
                 Pro<span className="text-blue-600">Prompt</span>
               </span>

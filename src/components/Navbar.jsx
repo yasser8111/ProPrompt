@@ -19,10 +19,8 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-xl border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="flex items-center space-x-2 space-x-reverse group gap-2">
-            <div className="p-1.5 bg-blue-600 rounded-lg group-hover:bg-blue-700 transition-colors">
-              <Sparkles className="w-5 h-5 text-white" />
-            </div>
+          <Link to="/" className="flex items-center group gap-3">
+            <img src="/logo.png" alt="ProPrompt" className="w-8 h-8 rounded-lg" />
             <span className="text-xl font-black text-gray-900 tracking-tight">Pro<span className="text-blue-600">Prompt</span></span>
           </Link>
 

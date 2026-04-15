@@ -15,7 +15,7 @@ const CategoryIcon = ({ category, className }) => {
 
 const PromptCard = ({ prompt }) => {
   const { t } = useLanguage();
-  
+
   const handleCopy = (e) => {
     e.preventDefault();
     navigator.clipboard.writeText(prompt.prompt);
@@ -26,9 +26,9 @@ const PromptCard = ({ prompt }) => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="group bg-white rounded-[45px] border border-gray-100/50 shadow-2xl shadow-blue-500/5 hover:border-blue-100 transition-all duration-500 overflow-hidden flex flex-col h-full"
+      className="group bg-white rounded-[32px] border border-gray-100 hover:border-blue-100 transition-all duration-300 overflow-hidden flex flex-col h-full"
     >
-      <Link to={`/prompts/${prompt.id}`} className="block relative aspect-video overflow-hidden bg-gray-50/50 border-b border-gray-50">
+      <Link to={`/prompts/${prompt.id}`} className="block relative aspect-video overflow-hidden bg-gray-50/50">
         {prompt.previewImages && prompt.previewImages[0] ? (
           <img
             src={prompt.previewImages[0]}
@@ -40,41 +40,28 @@ const PromptCard = ({ prompt }) => {
             <CategoryIcon category={prompt.category} className="w-10 h-10 text-blue-200" />
           </div>
         )}
-        <div className="absolute top-6 left-6 rtl:left-auto rtl:right-6">
-          <div className={`p-2.5 rounded-2xl border backdrop-blur-sm shadow-sm transition-transform duration-300 group-hover:scale-110 ${
-            prompt.category === 'Image' ? 'bg-indigo-soft/90 text-indigo-primary border-indigo-primary/10' :
-            prompt.category === 'Coding' ? 'bg-emerald-soft/90 text-emerald-primary border-emerald-primary/10' :
-            prompt.category === 'Text' ? 'bg-amber-soft/90 text-amber-primary border-amber-primary/10' :
-            'bg-rose-soft/90 text-rose-primary border-rose-primary/10'
+        <div className="absolute top-4 left-4 rtl:left-auto rtl:right-4">
+          <div className={`px-3 py-1 rounded-xl text-[10px] font-bold uppercase tracking-wider backdrop-blur-md border ${
+            prompt.category === 'Image' ? 'bg-indigo-soft/80 text-indigo-primary border-indigo-primary/10' :
+            prompt.category === 'Coding' ? 'bg-emerald-soft/80 text-emerald-primary border-emerald-primary/10' :
+            prompt.category === 'Text' ? 'bg-amber-soft/80 text-amber-primary border-amber-primary/10' :
+            'bg-rose-soft/80 text-rose-primary border-rose-primary/10'
           }`}>
-            <CategoryIcon category={prompt.category} className="w-4 h-4" />
+            {prompt.category}
           </div>
         </div>
       </Link>
 
-      <div className="p-8 grow flex flex-col">
-        <h3 className="text-xl font-black text-gray-900 group-hover:text-blue-600 transition-colors mb-4 line-clamp-1 tracking-tight leading-tight">{prompt.title}</h3>
-        <p className="text-gray-500 text-sm mb-6 line-clamp-2 leading-relaxed font-medium">
+      <div className="p-6 grow flex flex-col">
+        <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors mb-2 line-clamp-1">{prompt.title}</h3>
+        <p className="text-gray-500 text-sm mb-4 line-clamp-2 leading-relaxed">
           {prompt.prompt}
         </p>
         
-        <div className="flex flex-wrap gap-2 mb-8">
+        <div className="flex flex-wrap gap-x-3 gap-y-1">
           {prompt.tags.map(tag => (
-            <span key={tag} className="px-3 py-1.5 bg-gray-50/50 text-gray-400 text-[10px] font-black rounded-xl border border-gray-100 transition-colors hover:bg-blue-50 hover:text-blue-600 uppercase tracking-widest">#{tag}</span>
+            <span key={tag} className="text-gray-400 text-[11px] font-medium transition-colors hover:text-blue-500 cursor-default">#{tag}</span>
           ))}
-        </div>
-
-        <div className="mt-auto flex items-center justify-between pt-6 border-t border-gray-50/50">
-          <button 
-            onClick={handleCopy}
-            className="px-6 py-2.5 bg-gray-50/50 text-gray-400 hover:text-blue-600 font-black uppercase tracking-widest text-[10px] transition-all rounded-xl hover:bg-blue-50"
-          >
-            <span>{t('prompts.copyPrompt')}</span>
-          </button>
-          
-          <Link to={`/prompts/${prompt.id}`} className="p-2.5 rounded-2xl bg-gray-50 text-gray-400 group-hover:bg-blue-600 group-hover:text-white transition-all">
-            <ArrowRight className="w-4 h-4 rtl:rotate-180" />
-          </Link>
         </div>
       </div>
     </motion.div>
