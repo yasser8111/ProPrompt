@@ -61,5 +61,149 @@
     "previewImages": ["https://images.unsplash.com/photo-1614728263952-84ea206f99b6?q=80&w=1000&auto=format&fit=crop"],
     "isFeatured": true,
     "isTrending": true
+  },
+  {
+    "id": 7,
+    "title": "Professional Logo Concept",
+    "category": "Image",
+    "tags": ["logo", "branding", "minimalist"],
+    "prompt": "Minimalist logo design for a tech startup, abstract geometric shape representing connectivity, flat design, vector style, blue and white color palette, professional and modern.",
+    "previewImages": ["https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1000&auto=format&fit=crop"],
+    "isFeatured": true,
+    "isTrending": false
+  },
+  {
+    "id": 8,
+    "title": "Node.js Auth Middleware",
+    "category": "Coding",
+    "tags": ["nodejs", "backend", "security"],
+    "prompt": "Create a robust JWT authentication middleware for an Express.js application, including error handling for expired tokens and invalid signatures.",
+    "previewImages": [],
+    "sampleOutput": "const authMiddleware = (req, res, next) => { ... }",
+    "isFeatured": false,
+    "isTrending": true
+  },
+  {
+    "id": 9,
+    "title": "SEO Blog Post Outline",
+    "category": "Text",
+    "tags": ["content", "seo", "blogging"],
+    "prompt": "Generate a comprehensive SEO-optimized outline for a blog post titled 'The Future of AI in Remote Work', including H1, H2, and H3 headers and key talking points.",
+    "previewImages": [],
+    "isFeatured": false,
+    "isTrending": false
+  },
+  {
+    "id": 10,
+    "title": "Project Management Workflow",
+    "category": "Productivity",
+    "tags": ["workflow", "planning", "management"],
+    "prompt": "Design a step-by-step project management workflow for a creative agency, from initial client discovery to final delivery, using Agile methodologies.",
+    "previewImages": [],
+    "isFeatured": true,
+    "isTrending": true
+  },
+  {
+    "id": 11,
+    "title": "Ethereal Forest Landscape",
+    "category": "Image",
+    "tags": ["nature", "ethereal", "fantasy"],
+    "prompt": "Magical forest at dusk with glowing flora, morning mist, sunlight filtering through ancient trees, ethereal atmosphere, high detail, 8k resolution, cinematic composition.",
+    "previewImages": ["https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1000&auto=format&fit=crop"],
+    "isFeatured": false,
+    "isTrending": true
+  },
+  {
+    "id": 12,
+    "title": "Modern CSS Grid Layout",
+    "category": "Coding",
+    "tags": ["css", "frontend", "layout"],
+    "prompt": "Build a responsive masonry-style gallery layout using CSS Grid and Flexbox, ensuring smooth transitions and a clean mobile-first approach.",
+    "previewImages": [],
+    "sampleOutput": ".gallery { display: grid; ... }",
+    "isFeatured": false,
+    "isTrending": false
+  },
+  {
+    "id": 13,
+    "title": "Daily Routine Optimizer",
+    "category": "Productivity",
+    "tags": ["lifestyle", "routine", "efficiency"],
+    "prompt": "Create a high-performance daily routine for a software engineer, optimizing for deep work sessions, physical health, and mental clarity.",
+    "previewImages": [],
+    "isFeatured": false,
+    "isTrending": false
+  },
+  {
+    "id": 14,
+    "title": "Sci-Fi Short Story Opening",
+    "category": "Text",
+    "tags": ["fiction", "writing", "scifi"],
+    "prompt": "Write a compelling opening paragraph for a science fiction novel set on a colony on Mars, focusing on the atmospheric contrast between the red desert and the high-tech interior.",
+    "previewImages": [],
+    "isFeatured": true,
+    "isTrending": false
+  },
+  {
+    "id": 15,
+    "title": "3D Isometric Workstation",
+    "category": "Image",
+    "tags": ["3d", "isometric", "tech"],
+    "prompt": "3D isometric render of a futurist developer workstation, floating screens, holographic code, soft blue glow, clean lines, Octane render style, highly detailed.",
+    "previewImages": ["https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1000&auto=format&fit=crop"],
+    "isFeatured": false,
+    "isTrending": true
+  },
+  {
+    "id": 16,
+    "title": "Advanced SQL Query",
+    "category": "Coding",
+    "tags": ["sql", "database", "analytics"],
+    "prompt": "Write a complex SQL query to calculate the Year-over-Year growth of subscription revenue, partitioned by region and product tier.",
+    "previewImages": [],
+    "sampleOutput": "SELECT region, product_tier, ... FROM revenue_data ...",
+    "isFeatured": false,
+    "isTrending": false
+  },
+  {
+    "id": 17,
+    "title": "Social Media Content Plan",
+    "category": "Productivity",
+    "tags": ["socialmedia", "marketing", "content"],
+    "prompt": "Develop a 30-day social media content calendar for a sustainable fashion brand, focusing on brand values, educational content, and product showcases.",
+    "previewImages": [],
+    "isFeatured": true,
+    "isTrending": true
+  },
+  {
+    "id": 18,
+    "title": "Technical Documentation",
+    "category": "Text",
+    "tags": ["technical", "documentation", "guide"],
+    "prompt": "Write a clear and concise introduction for API technical documentation, explaining authentication, rate limits, and base URLs for developers.",
+    "previewImages": [],
+    "isFeatured": false,
+    "isTrending": false
+  },
+  {
+    "id": 19,
+    "title": "Cybernetic Humanoid",
+    "category": "Image",
+    "tags": ["cyborg", "futuristic", "portrait"],
+    "prompt": "Close-up portrait of a cybernetic humanoid with visible internal circuitry, bioluminescent accents, hyper-realistic textures, metallic surfaces, sharp focus, 8k.",
+    "previewImages": ["https://images.unsplash.com/photo-1589254065878-42c71f997008?q=80&w=1000&auto=format&fit=crop"],
+    "isFeatured": true,
+    "isTrending": true
+  },
+  {
+    "id": 20,
+    "title": "Next.js API Routes",
+    "category": "Coding",
+    "tags": ["nextjs", "frontend", "api"],
+    "prompt": "Implement a serverless API route in Next.js that handles file uploads to an S3 bucket with progress tracking and secure signed URLs.",
+    "previewImages": [],
+    "sampleOutput": "import { NextApiRequest, NextApiResponse } from 'next'; ...",
+    "isFeatured": false,
+    "isTrending": true
   }
 ]
