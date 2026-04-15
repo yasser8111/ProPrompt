@@ -10,10 +10,10 @@ const Home = () => {
   const { t } = useLanguage();
   const featuredPrompts = prompts.filter(p => p.isFeatured).slice(0, 3);
   const categories = [
-    { title: t('categories.image'), icon: ImageIcon, color: 'bg-indigo-50/50 text-indigo-600 border-indigo-100', count: '120+' },
-    { title: t('categories.writing'), icon: FileText, color: 'bg-amber-50/50 text-amber-600 border-amber-100', count: '80+' },
-    { title: t('categories.coding'), icon: Code, color: 'bg-emerald-50/50 text-emerald-600 border-emerald-100', count: '50+' },
-    { title: t('categories.productivity'), icon: Zap, color: 'bg-rose-50/50 text-rose-600 border-rose-100', count: '40+' },
+    { title: t('categories.image'), icon: ImageIcon, color: 'bg-indigo-soft/50 text-indigo-primary border-indigo-primary/10', count: '120+' },
+    { title: t('categories.writing'), icon: FileText, color: 'bg-amber-soft/50 text-amber-primary border-amber-primary/10', count: '80+' },
+    { title: t('categories.coding'), icon: Code, color: 'bg-emerald-soft/50 text-emerald-primary border-emerald-primary/10', count: '50+' },
+    { title: t('categories.productivity'), icon: Zap, color: 'bg-rose-soft/50 text-rose-primary border-rose-primary/10', count: '40+' },
   ];
 
   return (
@@ -32,7 +32,7 @@ const Home = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-gray-50 text-gray-400 text-[10px] font-black uppercase tracking-[3px] border border-gray-100 mb-10 gap-2">
+            <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-gray-50 text-gray-400 text-[10px] font-black uppercase tracking-[3px mb-10 gap-2">
               <Star className="w-3 h-3 text-amber-400 fill-amber-400" />
               {t('hero.badge')}
             </span>

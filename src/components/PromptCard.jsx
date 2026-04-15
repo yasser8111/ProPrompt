@@ -41,10 +41,14 @@ const PromptCard = ({ prompt }) => {
           </div>
         )}
         <div className="absolute top-6 left-6 rtl:left-auto rtl:right-6">
-          <span className="flex items-center space-x-1 space-x-reverse px-3 py-1.5 bg-white/90 backdrop-blur-md text-blue-600 text-[10px] font-black uppercase tracking-widest rounded-full shadow-sm border border-gray-100/50">
-            <CategoryIcon category={prompt.category} className="w-3 h-3" />
-            <span>{prompt.category}</span>
-          </span>
+          <div className={`p-2.5 rounded-2xl border backdrop-blur-sm shadow-sm transition-transform duration-300 group-hover:scale-110 ${
+            prompt.category === 'Image' ? 'bg-indigo-soft/90 text-indigo-primary border-indigo-primary/10' :
+            prompt.category === 'Coding' ? 'bg-emerald-soft/90 text-emerald-primary border-emerald-primary/10' :
+            prompt.category === 'Text' ? 'bg-amber-soft/90 text-amber-primary border-amber-primary/10' :
+            'bg-rose-soft/90 text-rose-primary border-rose-primary/10'
+          }`}>
+            <CategoryIcon category={prompt.category} className="w-4 h-4" />
+          </div>
         </div>
       </Link>
 
