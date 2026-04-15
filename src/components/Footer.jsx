@@ -94,7 +94,7 @@ const Footer = () => {
             <h3 className="text-[10px] font-black text-gray-900 uppercase tracking-[4px] mb-10 border-b border-blue-600/10 w-fit pb-4">
               {t("footer.social")}
             </h3>
-            <div className="flex space-x-6 space-x-reverse">
+            <div className="flex flex-wrap gap-6 mt-2">
               <a
                 href="#"
                 aria-label="X (Twitter)"
