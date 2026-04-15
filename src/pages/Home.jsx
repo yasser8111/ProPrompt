@@ -119,7 +119,7 @@ const Home = () => {
               { step: '03', title: t('howItWorks.step3.title'), text: t('howItWorks.step3.desc') },
             ].map((item, i) => (
               <div key={item.step} className="group text-center">
-                <div className="text-7xl font-black text-blue-600/20 group-hover:text-blue-600 mb-10 transition-colors duration-500">
+                <div className="text-7xl font-black text-blue-600 mb-10 transition-colors duration-500">
                   {item.step}
                 </div>
                 <h3 className="text-2xl font-black text-white mb-6 uppercase">{item.title}</h3>
