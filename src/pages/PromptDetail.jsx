@@ -67,38 +67,27 @@ const PromptDetail = () => {
             <div className="absolute top-0 right-0 w-80 h-80 bg-blue-50/30 rounded-full blur-[100px] -z-1"></div>
             
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-10 mb-12 relative z-10">
-              <div className="flex items-center space-x-5 space-x-reverse">
-                <div className="p-3.5 bg-blue-600 rounded-2xl shadow-xl shadow-blue-500/20">
-                  <Zap className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-black text-gray-900 uppercase tracking-tight">{t('details.powerPrompt')}</h3>
-                  <p className="text-sm font-bold text-gray-400 mt-1 uppercase tracking-widest text-[10px]">{t('details.refineDesc')}</p>
-                </div>
-              </div>
-              
               <div className="flex items-center space-x-3 space-x-reverse">
                 <button 
                   onClick={() => setIsEditing(!isEditing)}
-                  className={`flex items-center space-x-2 space-x-reverse px-6 py-3.5 rounded-2xl font-black uppercase tracking-widest text-[10px] transition-all ${isEditing ? 'bg-blue-600 text-white' : 'bg-gray-50 text-gray-500 hover:bg-gray-100'}`}
+                  aria-label={isEditing ? t('details.finish') : t('details.edit')}
+                  className={`p-4 rounded-2xl transition-all ${isEditing ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/20' : 'bg-gray-50 text-gray-400 hover:bg-gray-100'}`}
                 >
-                  <Edit3 className="w-3.5 h-3.5" />
-                  <span>{isEditing ? t('details.finish') : t('details.edit')}</span>
+                  <Edit3 className="w-5 h-5" />
                 </button>
                 <button 
                   onClick={handleCopy}
-                  className="flex items-center space-x-2 space-x-reverse px-8 py-3.5 bg-blue-600 text-white rounded-2xl font-black uppercase tracking-widest text-[10px] shadow-xl shadow-blue-500/20 hover:bg-blue-700 active:translate-y-0.5 transition-all group"
+                  aria-label={t('prompts.copyPrompt')}
+                  className="p-4 bg-blue-600 text-white rounded-2xl shadow-xl shadow-blue-500/20 hover:bg-blue-700 active:translate-y-0.5 transition-all group"
                 >
                   <AnimatePresence mode="wait">
                     {copied ? (
-                      <motion.div key="check" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="flex items-center space-x-2 space-x-reverse">
-                        <Check className="w-3.5 h-3.5" />
-                        <span>{t('details.copied')}</span>
+                      <motion.div key="check" initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }}>
+                        <Check className="w-5 h-5" />
                       </motion.div>
                     ) : (
-                      <motion.div key="copy" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="flex items-center space-x-2 space-x-reverse">
-                        <Copy className="w-3.5 h-3.5" />
-                        <span>{t('prompts.copyPrompt')}</span>
+                      <motion.div key="copy" initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }}>
+                        <Copy className="w-5 h-5" />
                       </motion.div>
                     )}
                   </AnimatePresence>
