@@ -63,7 +63,7 @@ const PromptDetail = () => {
             </p>
           </div>
 
-          <div className="bg-white rounded-[50px] border border-gray-100 shadow-2xl p-10 md:p-16 mb-20 relative overflow-hidden">
+          <div className="bg-white rounded-[50px] border border-gray-100 shadow-2xl shadow-blue-500/10 p-10 md:p-16 mb-20 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-80 h-80 bg-blue-50/30 rounded-full blur-[100px] -z-1"></div>
             
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-10 mb-12 relative z-10">
@@ -72,7 +72,7 @@ const PromptDetail = () => {
                 <p className="text-sm font-bold text-gray-400 mt-1 uppercase tracking-widest text-[10px]">{t('details.refineDesc')}</p>
               </div>
               
-              <div className="flex items-center space-x-3 space-x-reverse">
+              <div className="flex items-center space-x-3 space-x-reverse ">
                 <button 
                   onClick={() => setIsEditing(!isEditing)}
                   aria-label={isEditing ? t('details.finish') : t('details.edit')}
@@ -113,17 +113,8 @@ const PromptDetail = () => {
                   {editedText}
                 </p>
               )}
-              <button className="absolute bottom-8 right-8 rtl:right-auto rtl:left-8 p-4 bg-white rounded-2xl shadow-xl shadow-gray-200/50 border border-gray-100 text-gray-300 hover:text-blue-600 transition-all hover:bg-gray-50">
-                 <Wand2 className="w-5 h-5" />
-              </button>
             </div>
 
-            <div className="mt-10 flex items-center justify-between text-gray-400 text-[10px] font-black uppercase tracking-widest px-6 opacity-60">
-              <span>{t('prompts.tokenCount')}: ~{Math.floor(editedText.length / 4)}</span>
-              <div className="flex space-x-6 space-x-reverse">
-                 <button className="hover:text-blue-600 transition-colors uppercase">Safety Report</button>
-              </div>
-            </div>
           </div>
 
           <div className="mb-20">
