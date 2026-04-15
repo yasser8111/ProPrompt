@@ -8,16 +8,16 @@ const Layout = ({ children }) => {
   const { pathname } = useLocation();
 
   return (
-    <div className="min-h-screen bg-[#FDFDFF] text-gray-900 font-sans selection:bg-blue-100 selection:text-blue-900">
+    <div className="min-h-screen bg-[#FDFDFF] text-gray-900 font-sans selection:bg-blue-100 selection:text-blue-900 overflow-x-hidden">
       <Navbar />
-      <main className="pt-16 min-h-[calc(100vh-16rem)] overflow-hidden">
+      <main className="pt-16 min-h-[calc(100vh-16rem)]">
         <AnimatePresence mode="wait">
           <motion.div
             key={pathname}
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -30 }}
-            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5, ease: 'easeInOut' }}
           >
             {children}
           </motion.div>

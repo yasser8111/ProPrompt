@@ -1,0 +1,160 @@
+{
+  "en": {
+    "nav": {
+      "home": "Home",
+      "explore": "Explore",
+      "signIn": "Sign In"
+    },
+    "hero": {
+      "badge": "New Prompts Daily",
+      "title": "Discover Powerful",
+      "titleGradient": "AI Prompts",
+      "subtitle": "Elevate your creative workflow with our curated library of high-performance prompts for Midjourney, ChatGPT, DALL-E, and more.",
+      "browse": "Browse Library",
+      "submit": "Submit Prompt"
+    },
+    "categories": {
+      "title": "Smart Categories",
+      "subtitle": "Explore tailored prompts for every creative need.",
+      "image": "Image Generation",
+      "writing": "Writing & Content",
+      "coding": "Software Coding",
+      "productivity": "Productivity",
+      "promptsCount": "curated prompts"
+    },
+    "trending": {
+      "title": "Trending Now",
+      "subtitle": "Most used prompts by our community this week.",
+      "viewAll": "View All Library"
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Find Inspiration",
+        "desc": "Browse through thousands of high-quality, community-tested prompts."
+      },
+      "step2": {
+        "title": "Copy & Tweak",
+        "desc": "One-click copy, and then edit to fit your exact creative vision."
+      },
+      "step3": {
+        "title": "Get Results",
+        "desc": "Paste into your favorite AI tool and see stunning results instantly."
+      }
+    },
+    "footer": {
+      "desc": "Empowering creators with the world's most professional and refined AI library.",
+      "resources": "Resources",
+      "company": "Company",
+      "social": "Stay Connected",
+      "rights": "All rights reserved. Designed for professional creators."
+    },
+    "prompts": {
+      "title": "Explore",
+      "titleAccent": "The Library",
+      "subtitle": "Filter through our comprehensive collection of AI prompts.",
+      "searchPlaceholder": "Search prompts by title, content or tags...",
+      "trending": "Trending",
+      "newest": "Newest",
+      "all": "All",
+      "noResults": "No results found",
+      "noResultsDesc": "Try searching for something else or clearing filters.",
+      "clearFilters": "Clear All Filters",
+      "copyPrompt": "Copy Prompt",
+      "tokenCount": "Token Count"
+    },
+    "details": {
+      "back": "Back to Library",
+      "description": "Professional high-performance prompt optimized for peak AI results.",
+      "powerPrompt": "The Power Prompt",
+      "refineDesc": "Refine this prompt for your needs.",
+      "edit": "Edit Prompt",
+      "finish": "Finish Editing",
+      "copied": "Copied!",
+      "results": "Results & Examples",
+      "upgrade": "Upgrade to Pro",
+      "upgradeDesc": "Get access to professional-grade variations and AI tools.",
+      "unlock": "Unlock Pro Features",
+      "proTips": "Pro Tips & Notes"
+    }
+  },
+  "ar": {
+    "nav": {
+      "home": "الرئيسية",
+      "explore": "استكشف",
+      "signIn": "تسجيل الدخول"
+    },
+    "hero": {
+      "badge": "أوامر جديدة يومياً",
+      "title": "اكتشف قوة",
+      "titleGradient": "أوامر الذكاء الاصطناعي",
+      "subtitle": "ارتقِ بعملك الإبداعي من خلال مكتبتنا المختارة من الأوامر عالية الأداء لـ Midjourney و ChatGPT و DALL-E والمزيد.",
+      "browse": "تصفح المكتبة",
+      "submit": "أضف أمراً"
+    },
+    "categories": {
+      "title": "تصنيفات ذكية",
+      "subtitle": "اكتشف أوامر مخصصة لكل احتياجاتك الإبداعية.",
+      "image": "توليد الصور",
+      "writing": "الكتابة والمحتوى",
+      "coding": "تطوير البرمجيات",
+      "productivity": "الإنتاجية",
+      "promptsCount": "أمر مختار"
+    },
+    "trending": {
+      "title": "رائج الآن",
+      "subtitle": "الأوامر الأكثر استخداماً من قبل مجتمعنا هذا الأسبوع.",
+      "viewAll": "عرض المكتبة بالكامل"
+    },
+    "howItWorks": {
+      "title": "كيف يعمل الموقع",
+      "step1": {
+        "title": "ابحث عن الإلهام",
+        "desc": "تصفح آلاف الأوامر عالية الجودة والمختبرة من قبل المجتمع."
+      },
+      "step2": {
+        "title": "انسخ وعدل",
+        "desc": "نسخ بضغطة واحدة، ثم عدل لتناسب رؤيتك الإبداعية بالضبط."
+      },
+      "step3": {
+        "title": "احصل على النتائج",
+        "desc": "ألصقها في أداة الذكاء الاصطناعي المفضلة لديك وشاهد النتائج مذهلة فوراً."
+      }
+    },
+    "footer": {
+      "desc": "تمكين المبدعين من خلال المكتبة الأكثر احترافية ورقياً في العالم.",
+      "resources": "المصادر",
+      "company": "الشركة",
+      "social": "ابقَ على تواصل",
+      "rights": "جميع الحقوق محفوظة. صمم للمبدعين المحترفين."
+    },
+    "prompts": {
+      "title": "استكشف",
+      "titleAccent": "المكتبة",
+      "subtitle": "ابحث في مجموعتنا الشاملة من أوامر الذكاء الاصطناعي.",
+      "searchPlaceholder": "ابحث بالعنوان، المحتوى أو الأوسمة...",
+      "trending": "الرائج",
+      "newest": "الأحدث",
+      "all": "الكل",
+      "noResults": "لم يتم العثور على نتائج",
+      "noResultsDesc": "حاول البحث عن شيء آخر أو مسح عوامل التصفية.",
+      "clearFilters": "مسح الفلاتر",
+      "copyPrompt": "نسخ الأمر",
+      "tokenCount": "عدد التوكنز"
+    },
+    "details": {
+      "back": "العودة للمكتبة",
+      "description": "أمر احترافي عالي الأداء ومحسن لأفضل نتائج الذكاء الاصطناعي.",
+      "powerPrompt": "الأمر القوي",
+      "refineDesc": "قم بتحسين هذا الأمر ليناسب احتياجاتك.",
+      "edit": "تعديل الأمر",
+      "finish": "إنهاء التعديل",
+      "copied": "تم النسخ!",
+      "results": "النتائج والأمثلة",
+      "upgrade": "الترقية للمحترفين",
+      "upgradeDesc": "احصل على إصدارات احترافية وأدوات ذكاء اصطناعي متطورة.",
+      "unlock": "فتح الميزات الاحترافية",
+      "proTips": "تلميحات وملاحظات للمحترفين"
+    }
+  }
+}

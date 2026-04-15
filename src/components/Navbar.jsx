@@ -1,49 +1,65 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Sparkles, Search, Menu, X } from 'lucide-react';
+import { Sparkles, Search, Menu, X, Globe } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { lang, toggleLanguage, t } = useLanguage();
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'Explore', path: '/prompts' },
+    { name: t('nav.home'), path: '/' },
+    { name: t('nav.explore'), path: '/prompts' },
   ];
 
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-xl border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="flex items-center space-x-2 group">
-            <div className="p-1.5 bg-blue-600 rounded-lg group-hover:scale-110 transition-transform">
+          <Link to="/" className="flex items-center space-x-2 space-x-reverse group">
+            <div className="p-1.5 bg-blue-600 rounded-lg group-hover:bg-blue-700 transition-colors">
               <Sparkles className="w-5 h-5 text-white" />
             </div>
-            <span className="text-xl font-bold text-gray-900 tracking-tight">Pro<span className="text-blue-600">Prompt</span></span>
+            <span className="text-xl font-black text-gray-900 tracking-tight">Pro<span className="text-blue-600">Prompt</span></span>
           </Link>
 
           {/* Desktop Links */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 space-x-reverse">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
-                  isActive(link.path) ? 'text-blue-600' : 'text-gray-600'
+                className={`text-sm font-bold transition-all px-2 py-1 rounded-lg ${
+                  isActive(link.path) ? 'text-blue-600 bg-blue-50/50' : 'text-gray-500 hover:text-blue-600 hover:bg-gray-50'
                 }`}
               >
                 {link.name}
               </Link>
             ))}
-            <button className="px-4 py-2 bg-blue-600 text-white text-sm font-semibold rounded-full hover:bg-blue-700 transition-all hover:shadow-lg active:scale-95">
-              Sign In
+            
+            <div className="h-4 w-px bg-gray-200" />
+            
+            <button 
+              onClick={toggleLanguage}
+              className="group flex items-center space-x-2 space-x-reverse px-4 py-2 bg-gray-50 text-gray-700 text-xs font-black uppercase tracking-widest rounded-xl hover:bg-gray-100 transition-all border border-gray-200/50"
+            >
+              <Globe className="w-3.5 h-3.5 text-blue-600 group-hover:rotate-12 transition-transform" />
+              <span>{lang === 'en' ? 'Arabic' : 'English'}</span>
+            </button>
+
+            <button className="px-6 py-2.5 bg-blue-600 text-white text-xs font-black uppercase tracking-widest rounded-xl hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/20 active:translate-y-0.5 transition-all">
+              {t('nav.signIn')}
             </button>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center space-x-4 space-x-reverse">
+            <button onClick={toggleLanguage} className="p-2 text-gray-600 bg-gray-50 rounded-lg border border-gray-100">
+              <Globe className="w-5 h-5" />
+            </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-600 p-2 rounded-md hover:bg-gray-100 focus:outline-none"
@@ -63,15 +79,15 @@ const Navbar = () => {
                 key={link.path}
                 to={link.path}
                 onClick={() => setIsOpen(false)}
-                className={`block px-3 py-2 rounded-md text-base font-medium ${
+                className={`block px-3 py-3 rounded-xl text-base font-bold ${
                   isActive(link.path) ? 'text-blue-600 bg-blue-50' : 'text-gray-600 hover:bg-gray-50'
                 }`}
               >
                 {link.name}
               </Link>
             ))}
-            <button className="w-full mt-4 bg-blue-600 text-white px-3 py-3 rounded-xl font-semibold shadow-md active:scale-95 transition-transform">
-              Sign In
+            <button className="w-full mt-4 bg-blue-600 text-white px-3 py-4 rounded-2xl font-black uppercase tracking-widest shadow-md transition-transform">
+              {t('nav.signIn')}
             </button>
           </div>
         </div>

@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Outfit:wght@400;600;800;900&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-arabic: 'Cairo', system-ui, sans-serif;
 }
 
 @layer base {
@@ -12,25 +14,25 @@
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    @apply transition-all duration-300;
   }
 
   /* Custom Smooth Scrollbar */
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 6px;
   }
 
   ::-webkit-scrollbar-track {
-    background: #f8fafc;
+    background: transparent;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #cbd5e1;
-    border-radius: 5px;
-    border: 3px solid #f8fafc;
+    background: #e2e8f0;
+    border-radius: 10px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #94a3b8;
+    background: #cbd5e1;
   }
 }
 
@@ -46,5 +48,14 @@
   @keyframes spin-slow {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
+  }
+
+  /* Subtle transitions */
+  .premium-transition {
+     @apply transition-all duration-300 ease-out;
+  }
+
+  .font-arabic {
+    font-family: 'Cairo', sans-serif !important;
   }
 }
