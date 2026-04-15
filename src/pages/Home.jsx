@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles, Image as ImageIcon, Code, FileText, Zap, Star } from 'lucide-react';
+import { ArrowRight, Image as ImageIcon, Code, FileText, Zap, Star } from 'lucide-react';
 import prompts from '../data/prompts.json';
 import PromptCard from '../components/PromptCard';
 import { useLanguage } from '../context/LanguageContext';
@@ -32,13 +32,13 @@ const Home = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-50/70 text-blue-600 text-xs font-black uppercase tracking-widest border border-blue-100/50 mb-10 transition-colors hover:bg-blue-100">
-              <Star className="w-3.5 h-3.5 mr-2 text-amber-400 fill-amber-400" />
+            <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-gray-50 text-gray-400 text-[10px] font-black uppercase tracking-[3px] border border-gray-100 mb-10 gap-2">
+              <Star className="w-3 h-3 text-amber-400 fill-amber-400" />
               {t('hero.badge')}
             </span>
             <h1 className="text-5xl md:text-7xl font-black text-gray-900 tracking-tighter leading-[1.05] mb-8">
               {t('hero.title')} <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">{t('hero.titleGradient')}</span>
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-indigo-600">{t('hero.titleGradient')}</span>
             </h1>
             <p className="max-w-2xl mx-auto text-lg md:text-xl text-gray-500 mb-12 leading-relaxed font-medium">
               {t('hero.subtitle')}
